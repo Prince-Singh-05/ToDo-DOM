@@ -1,0 +1,108 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: #0f0f0f;
+    color: #f0f0f0;
+}
+
+.container {
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+}
+
+.inputTask {
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+#inputBox {
+    height: 2rem;
+    width: 50%;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+}
+
+#addTaskBtn {
+    height: 2rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#addTaskBtn:hover {
+    background-color: #fc640dcc;
+    color: #f0f0f0;
+    transition: all 0.4s ease;
+}
+
+#saveListBtn {
+    height: 2rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: rgb(53, 192, 53);
+}
+
+.task-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.todo {
+    display: flex;
+    gap: 0.5rem;
+    height: 30px;
+    width: 100%;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.todo:hover .deleteTaskBtn {
+    opacity: 1;
+}
+
+.todo p {
+    min-width: 20%;
+    flex-grow: 1;
+    text-align: left;
+    outline: none;
+}
+
+.deleteTaskBtn {
+    background: transparent;
+    border: none;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.deleteTaskBtn i {
+    color: #bebebe52;
+}
+
+.taskStatusCheckbox {
+    scale: 1.2;
+    accent-color: #fc640dcc;
+}
+
+
+
+
